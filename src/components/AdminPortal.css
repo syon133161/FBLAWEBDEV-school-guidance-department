@@ -1,0 +1,48 @@
+.admin-portal {
+  display: flex;
+  height: 100vh;
+}
+
+.admin-sidebar {
+  width: 250px;
+  background-color: #f8f9fa; /* Consistent light background */
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Fixed to keep it on the side */
+  height: 100%;
+}
+
+.admin-sidebar h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.admin-sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.admin-sidebar li {
+  margin: 15px 0;
+}
+
+.admin-sidebar a {
+  text-decoration: none;
+  color: #007bff; /* Consistent link color */
+  font-size: 18px;
+}
+
+.admin-sidebar a:hover {
+  text-decoration: underline;
+}
+
+.admin-portal-content {
+  flex-grow: 1;
+  padding: 20px;
+  margin-left: 250px; /* Margin to align with the fixed sidebar */
+}
+
+.admin-portal-content h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}

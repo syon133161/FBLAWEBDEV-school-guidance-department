@@ -1,0 +1,77 @@
+/* General Container Styling */
+.sign-in-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f6f9;
+}
+
+.sign-in-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+/* Typography */
+.sign-in-box h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Form Inputs */
+.sign-in-box input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Sign In Button */
+.sign-in-box button {
+  width: 100%;
+  padding: 12px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sign-in-box button:hover {
+  background-color: #0056b3;
+}
+
+.sign-in-box button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Error Message Styling */
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Link Styling */
+.sign-in-box p {
+  margin-top: 20px;
+  color: #777;
+}
+
+.sign-in-box a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.sign-in-box a:hover {
+  text-decoration: underline;
+}

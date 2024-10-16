@@ -1,0 +1,416 @@
+.hompage {
+  overflow-x: hidden;
+}
+
+
+/* Hero Section */
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../assets/working.jpg'); /* Ensure correct path */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  color: #ffffff;
+  text-align: center;
+  max-width: 800px;
+  padding: 20px;
+  background-color: rgba(38, 38, 38, 0.5);
+  border-radius: 15px;
+  margin: 15px;
+}
+
+
+.hero-content h1 {
+  font-size: 3rem;
+  opacity: 1;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  color: white;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  opacity: 1;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.hero-button {
+  background-color: #3498db;
+  color: #ecf0f1;
+  opacity: 1;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-bottom: 20px;
+}
+
+.hero-button:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-button {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+}
+
+
+
+
+
+/* Employer Section */
+.employer-section {
+  background-color: #ffffff;
+  padding: 50px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.employer-content h2 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  margin-right: 250px;
+  margin-left: 250px;
+}
+
+.employer-content p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  margin-right: 275px;
+  margin-left: 275px;
+}
+
+.employer-button {
+  padding: 10px 20px;
+  background-color: #2c3e50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.employer-button:hover {
+  background-color: #34495e;
+}
+
+/* Parallax Effect */
+.hero-section,
+.employer-section {
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.wave-svg {
+  position: absolute;
+  top: 325px; /* Move up to overlap the hero section */
+  left: 0;
+  width: 100%;
+  z-index: 1; /* Place behind the content */
+}
+
+/* Job Postings Section */
+.job-postings-section {
+  background-color: #f7f7f7;
+  padding: 50px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden; /* Prevent horizontal scrolling */
+}
+
+.job-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 100%; /* Prevent overflow */
+  overflow: hidden;
+}
+
+.job-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.job-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.job-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.job-card p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.view-job-button {
+  padding: 10px 20px;
+  background-color: #2c3e50;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.view-job-button:hover {
+  background-color: #34495e;
+}
+
+/* Chevron styles */
+.chevron {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #333;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+  padding: 10px;
+  outline: none;
+}
+
+.chevron-left {
+  right: 200px;
+}
+
+.chevron-right {
+  left: 200px;
+}
+
+/* Remove any hover effect */
+.chevron:hover {
+  background: none; /* Ensures no background change */
+  color: #333; /* Maintains the original color */
+}
+
+
+
+/* Ensure responsive layout */
+@media (max-width: 768px) {
+  .job-card {
+    width: 250px;
+  }
+
+  .chevron {
+    font-size: 1.5rem;
+  }
+}
+
+
+/* Apply Section */
+.apply-section {
+  background-color: #f4f4f4;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.apply-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.apply-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.apply-button {
+  padding: 15px 30px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.apply-button:hover {
+  background-color: #2980b9;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.testimonial-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.testimonial-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.testimonial-role {
+  font-style: italic;
+  color: #7f8c8d;
+  margin-bottom: 10px;
+}
+
+.testimonial-text {
+  font-size: 1.1rem;
+  color: #2c3e50;
+}
+
+.upcoming-events-section {
+  background-color: #f4f4f4;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.upcoming-events-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.events-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.event-card {
+  background-color: white;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: left;
+}
+
+.event-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #2980b9;
+}
+
+.event-card p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #7f8c8d;
+}
+
+.newsletter-section {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.newsletter-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.newsletter-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.newsletter-form input {
+  padding: 15px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+  width: 400px;
+}
+
+.newsletter-button {
+  padding: 15px 30px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 500px;
+  margin-right: 500px;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter-button:hover {
+  background-color: #2980b9;
+}
+
+.success-message {
+  font-size: 1.3rem;
+  color: #27ae60;
+  margin-top: 20px;
+}

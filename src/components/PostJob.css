@@ -1,0 +1,69 @@
+/* PostJob.css */
+
+.post-job-page {
+  max-width: 600px; /* Set a max width for the form container */
+  margin: 0 auto; /* Center the form */
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+h2 {
+  text-align: center; /* Center the heading */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.form-group {
+  margin-bottom: 15px; /* Space between form fields */
+}
+
+label {
+  display: block; /* Block display for labels */
+  margin-bottom: 5px; /* Space between label and input */
+  font-weight: bold; /* Make label bold */
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 100%; /* Full width for inputs */
+  padding: 10px; /* Padding inside the inputs */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+textarea {
+  height: 100px; /* Fixed height for the description textarea */
+}
+
+button.post-job-btn {
+  width: 100%; /* Full width for the post job button */
+  padding: 10px;
+  background-color: #28a745; /* Green background */
+  color: white;
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Increase font size */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+button.post-job-btn:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+button.back-btn {
+  margin-top: 20px; /* Space above the back button */
+  padding: 10px 15px; /* Padding for the back button */
+  background-color: #3498db; /* Blue background */
+  color: white;
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Increase font size */
+}
+
+button.back-btn:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}

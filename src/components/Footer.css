@@ -1,0 +1,74 @@
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter-signup {
+  margin-bottom: 20px;
+}
+
+.newsletter-signup h2 {
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+.newsletter-signup form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter-signup input[type="email"] {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.newsletter-signup button {
+  padding: 8px 16px; /* Smaller padding */
+  border: none;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px; /* Smaller font size */
+  width: auto; /* This ensures the button only takes up as much space as its content */
+  display: inline-block; /* Ensure it's inline with its content */
+  max-width: 150px; /* You can also set a fixed width if necessary */
+}
+
+
+
+.footer-links {
+  margin-top: 20px;
+}
+
+.footer-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-social a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.footer-copyright {
+  margin-top: 20px;
+  font-size: 14px;
+}
+

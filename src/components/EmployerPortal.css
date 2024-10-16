@@ -1,0 +1,58 @@
+/* Consistent styling for the employer portal */
+.portal-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 1000; /* Ensures it stays above other content */
+}
+
+.sidebar h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #007bff; /* Consistent link color */
+  font-size: 18px;
+  padding: 5px;
+  display: block;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+  background-color: #e9ecef; /* Light background on hover */
+  color: #0056b3; /* Darker blue on hover */
+}
+
+.main-content {
+  margin-left: 270px; /* Adjust to provide space for the fixed sidebar */
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto; /* Adds vertical scroll if content exceeds viewport */
+}
+
+.main-content h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}

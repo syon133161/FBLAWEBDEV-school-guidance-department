@@ -1,0 +1,149 @@
+/* General Styles */
+.navbar {
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  color: black;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Navigation Links */
+.navbar-links {
+  display: flex;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.navbar-links ul {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.navbar-links ul li {
+  border: none;
+  outline: none;
+  background: none;
+  padding-top: 0px;
+}
+
+.navbar-left {
+  display: flex;
+  gap: 30px;
+  flex: 1;
+  align-items: center;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* Logo */
+.navbar-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  flex: 0 0 auto;
+  background-image: url('../assets/sfhslogo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100px;
+  position: absolute;
+  left: 48%;
+}
+
+/* Right Navbar */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* Link Styles */
+.nav-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  padding: 10px 15px;
+  border: 2px solid transparent; /* Transparent border */
+  cursor: pointer;
+  border-radius: 4px;
+  transition: color 0.3s, border-color 0.3s; /* Smooth transitions */
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.nav-link:hover {
+  color: #3498db; /* Text color change */
+  border-color: rgba(52, 152, 219, 0.5); /* Blue border glow */
+}
+
+/* Mobile Menu Icon */
+.navbar-mobile-icon {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.icon-bar {
+  width: 25px;
+  height: 3px;
+  background-color: #ecf0f1;
+  transition: all 0.3s;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-container {
+    height: 60px;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.3s;
+  }
+
+  .navbar-links.active {
+    left: 0;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .navbar-mobile-icon {
+    display: flex;
+  }
+}
